@@ -1,8 +1,10 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Employee Template</title>
+    <link rel="stylesheet" href="{% static 'css/employees.css' %}">
 </head>
 <body>
     <h3>Employee Details</h3>
@@ -11,5 +13,6 @@
         <li>Name: {{name}}</li>
         <li>Salary: {{sal}}</li>
     </ol>
+    <img src="{% static 'images/marry_smith.jpg' %}" />
 </body>
 </html>
